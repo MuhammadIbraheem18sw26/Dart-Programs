@@ -20,4 +20,28 @@ void main() {
   bool? condition = null;
 
   print(name);
+
+  //null-aware assignment operator(??=)
+
+  /**
+   * there’s also a null-aware assignment operator (??=) to simplify if-null
+statements that have a single variable:
+   */
+  double? size;
+  size ??= 20.0;
+
+  int? age = 10;
+  print(age.toDouble());
 }
+
+// multiple null operators
+/**
+ * ?? if-null operator
+??= null-aware assignment operator
+?. null-aware access operator
+?. null-aware method invocation operator
+! null assertion operator
+?.. null-aware cascade operator
+?[] null-aware index operator
+...? null-aware spread operator
+ */
