@@ -26,5 +26,10 @@ void main() {
   print(dessert2);
 
   // dessert2.add("hello"); not allowed --> runtime error
-  print(dessert);
+
+  // first and last method
+  const drinks = ['water', 'milk', 'juice', 'soda'];
+
+  print(drinks.first);
+  print(drinks.last);
 }
