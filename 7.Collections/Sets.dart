@@ -29,12 +29,14 @@ void main() {
   newSet.add(3);
   print(newSet); //output {1, 4, 5, 6, 7, 8, 3}
 
-  // removiing element from set
+  // removing element from set
 
   print("enter Number to delete ");
   int num = 4;
   if (newSet.contains(num)) {
     newSet.remove(num);
     print("numdeleted");
+  } else {
+    print("$num" + "not fount");
   }
 }
