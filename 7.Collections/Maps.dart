@@ -18,4 +18,12 @@ void main() {
   // remove
   myMap.remove('hello');
   print(newMap);
+
+  List<String>? list1 = ["aaaaa", "bb", "ccc", "dddd"];
+
+// chaining higher order function
+
+  final newList =
+      list1.where((element) => element.length >= 3).map((e) => e.toUpperCase());
+  print(newList);
 }
