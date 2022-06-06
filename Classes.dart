@@ -13,7 +13,10 @@ class Person {
 }
 
 class Student extends Person {
-  Student(String givenName, String surName) : super(givenName, surName);
+  Student(
+    String givenName,
+    String surName,
+  ) : super(givenName, surName);
   var grades = <Grade>[];
 }
 
@@ -23,4 +26,8 @@ void main() {
 
   print(asim.fullName);
   print(ibrahim.fullName);
+  asim.grades.add(Grade.A);
+  asim.grades.add(Grade.B);
+
+  print(asim.grades.toString());
 }
