@@ -20,6 +20,22 @@ class Student extends Person {
   var grades = <Grade>[];
 }
 
+/// Multi level hierarchy
+
+class SchoolBandMember extends Student {
+  SchoolBandMember(String givenName, String surname)
+      : super(givenName, surname);
+  static const minimumPracticeTime = 2;
+}
+
+// Sibling class
+
+class StudentAthlete extends Student {
+  StudentAthlete(String givenName, String surname) : super(givenName, surname);
+
+  bool get isEligible => grades.every((grade) => grade != Grade.D);
+}
+
 void main() {
   final asim = Student("Asim", "Malik");
   final ibrahim = Person("Ibraheem", "Jhullan");
@@ -29,5 +45,9 @@ void main() {
   asim.grades.add(Grade.A);
   asim.grades.add(Grade.B);
 
-  print(asim.grades.toString());
+  print(asim.grades);
+
+  final studentsList = [asim, ibrahim];
+
+  print(studentsList);
 }
