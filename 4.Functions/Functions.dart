@@ -2,7 +2,7 @@ void main() {
   String functionName(int number) {
     return "Hello";
   }
-  }
+}
   
   
 
@@ -39,4 +39,4 @@ The return type, function name and parameters are collectively
 known as the function signature. The code between the braces
 is known as the function body.
  */
-}
+

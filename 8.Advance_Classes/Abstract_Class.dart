@@ -19,7 +19,7 @@ class Mammal extends Animal {
 }
 
 void main() {
-  Mammal animal = Mammal();
+  final animal = Mammal();
 
   animal.eat();
   print("mammal is alive ${animal.isAlive}");
