@@ -11,6 +11,4 @@ void main() {
         () => print('Future is complete'),
       );
   print('After the future');
-
-  print("after the future");
 }
